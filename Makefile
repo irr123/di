@@ -1,3 +1,6 @@
+.PHONY: all
+all: fmt lint test
+
 .PHONY: fmt
 fmt:
 	go fmt ./...

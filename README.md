@@ -1,23 +1,21 @@
-# DI Container
+# Lightweight DI Container for Go
 
 This package provides a simple dependency injection (DI) container for
- Go applications. It helps you manage the lifecycle of your dependencies,
- including setup and cleanup operations.
+ Go applications. It helps you to reuse entities and manage it's lifecycle.
+
+- 150 loc
+- Generics
+- No codegen
+- No external dependencies
+- No interfaces which have to be implemented
 
 
 ## Example
 
-[You can simply play around it](./di_test.go#L42).
-
-
-## Features
-
-* **Dependency registration:** Register dependencies with their setup functions.
-* **Named dependencies:**  Register dependencies with custom names to avoid conflicts.
-* **Generic types:**  Use generics to define dependencies with specific types.
-* **Setup and cleanup:** Define setup and cleanup functions for each dependency.
-* **Options:** Customize dependency behavior with options like `OptNoReuse` and `OptMiddleware`.
-* **Error handling:**  Handles errors during setup and cleanup.
+- [go.dev](https://go.dev/play/p/vxWijBAc3lC) | [source](./di_test.go#L44)
+- My blog post
+  [DI Container vs. Service Template](https://bogomolov.work/blog/posts/golang-di-container-vs-service-template)
+  with additional examples and explanations
 
 
 ## Installation
